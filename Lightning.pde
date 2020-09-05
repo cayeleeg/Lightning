@@ -11,7 +11,7 @@ void setup() {
   startY = 0;
   endX = startX;
   endY = startY;
-  frameRate(30);
+  frameRate(60);
   smooth();
   background(0);
 }
@@ -33,7 +33,7 @@ void draw() {
     startX = endX; 
     startY = endY;
   }
-    int frequency = 10;
+    int frequency = 2;
     if(frameCount % frequency == 0) {
       noStroke();
       fill(0,0,0,191);
