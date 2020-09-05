@@ -33,6 +33,15 @@ void draw() {
     startX = endX; 
     startY = endY;
   }
+  
+    int frequency = 10;
+    if(frameCount % frequency == 0) {
+      noStroke();
+      fill(0,0,0,191);
+      rect(0,0,780,780);
+      delay(5);
+    }
+    
   stroke(0);
   strokeWeight(0.01);
   fill(26, 26, 26);
@@ -42,15 +51,7 @@ void draw() {
   rect(284, 450, 140, 330);
   rect(424, 550, 130, 230);
   rect(554, 610, 104, 170);
-  rect(658, 390, 122, 390);
-  
-  int frequency = 10;
-    if(frameCount % frequency == 0) {
-      noStroke();
-      fill(0,0,0,191);
-      rect(0,0,780,780);
-      delay(5);
-    } 
+  rect(658, 390, 122, 390); 
     
   int windows = 290;
   int window = 5; 
