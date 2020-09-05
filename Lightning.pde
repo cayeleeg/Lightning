@@ -11,7 +11,7 @@ void setup() {
   startY = 0;
   endX = startX;
   endY = startY;
-  frameRate(60);
+  frameRate(13);
   smooth();
   background(0);
 }
@@ -38,7 +38,7 @@ void draw() {
       noStroke();
       fill(0,0,0,191);
       rect(0,0,780,780);
-      delay(100);
+      //delay(100);
     }
     
   stroke(0);
