@@ -11,7 +11,7 @@
 				padding: 26px;
 				display: inline-block;
 				border-radius: 5px;
-				animation: blinkingBackground 6s infinite;
+				animation: blinkingBackground 7s infinite;
 			}
 			@keyframes blinkingBackground{
 				0%		{ background-color: #CCCCCC;}
@@ -20,9 +20,15 @@
 				75%		{ background-color: #CCCCCC;}
 				100%	        { background-color: #CCCCCC;}
 			}
+			      #blink {
+				width: 500px;
+				height: 500px;
+				animation: blinkingBackground 7s infinite;
+			      }
 		</style>
 	</head>
 	<body>
+		<div id="blink"></div>
 		<header>
 			<div class="blink-bg">Lightning</div>
 		</header>
