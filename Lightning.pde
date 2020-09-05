@@ -33,13 +33,12 @@ void draw() {
     startX = endX; 
     startY = endY;
   }
-  
     int frequency = 10;
     if(frameCount % frequency == 0) {
       noStroke();
       fill(0,0,0,191);
       rect(0,0,780,780);
-      delay(5);
+      delay(100);
     }
     
   stroke(0);
@@ -51,11 +50,11 @@ void draw() {
   rect(284, 450, 140, 330);
   rect(424, 550, 130, 230);
   rect(554, 610, 104, 170);
-  rect(658, 390, 122, 390); 
-    
+  rect(658, 390, 122, 390);
+
   int windows = 290;
   int window = 5; 
-
+  
   while (windows < 780 && window < 780) { 
     //fill(0,0,0);
     //if(mousePressed){
@@ -127,17 +126,17 @@ void draw() {
     windows = windows + 50;
   }
   
-    if(mousePressed){
-      lights = (int)(Math.random()*2);
-    }
+    //if(mousePressed){
+    //  lights = (int)(Math.random()*2);
+    //}
+    //int frequency = 10;
+    //if(frameCount % frequency == 0) {
+    //  noStroke();
+    //  fill(0,0,0,191);
+    //  rect(0,0,780,780);
+    //  delay(100);
+    //}
     
-    /* int frequency = 10;
-    if(frameCount % frequency == 0) {
-      noStroke();
-      fill(0,0,0,191);
-      rect(0,0,780,780);
-      delay(5);
-    } */
   //snowflakes?
   //strokeWeight((float)(Math.random()*0.01));
   //translate(width - 260, height - 260);
