@@ -3,7 +3,10 @@ int startY;
 int endX;
 int endY;
 //float g =2/9.0;
-int lights = (int)(Math.random()*2);
+int lights = (int)(Math.random()*101);
+int[] windowX = {5, 5, 105, 145, 240, 300, 344, 385,480, 620, 675, 755, 755};
+int[] windowY = {290, 640, 690, 540, 741, 680, 580, 730, 560, 725, 520, 420, 670};
+int windowSize = 20;
 
 void setup() {
   size(780, 780);
@@ -54,7 +57,7 @@ void draw() {
 
   int windows = 290;
   int window = 5; 
-  
+
   while (windows < 780 && window < 780) { 
     //fill(0,0,0);
     //if(mousePressed){
@@ -62,73 +65,53 @@ void draw() {
     //  if (millis()/1000%6<3 && frameCount%7<1)
     //  fill(0);    
     //}
-   
     //building 1
     if(lights == 1) {
-      fill(255,255,0);
+      fill(255, 255, 100);
     } else {
-    fill(0,0,0);
-    }
+      fill(0,0,0);
+    }  
     rect(window, windows, 20, 20);    
     //building2
-    if(lights == 0) {
-      fill(255,255,0);
-    } else {
-    fill(0,0,0);
-    }
     rect(window + 60, windows + 250, 20, 20);
     rect(window + 100, windows + 250, 20, 20);
     rect(window + 140, windows + 250, 20, 20);
     //building 3
-    if(lights == 0) {
-      fill(255,255,0);
-    } else {
-    fill(0,0,0);
-    }
     rect(window + 190, windows + 300, 20, 20);
     rect(window + 235, windows + 300, 20, 20);
     //building4
-    if(lights == 1) {
-      fill(255,255,0);
-    } else {
-    fill(0,0,0);
-    }
     rect(window + 295, windows + 190, 20, 20);
     rect(window + 339, windows + 190, 20, 20);
     rect(window + 380, windows + 190, 20, 20);
     //building 5
-    if(lights == 0) {
-      fill(255,255,0);
-    } else {
-    fill(0,0,0);
-    }
     rect(window + 435, windows + 270, 20, 20);
     rect(window + 475, windows + 270, 20, 20);
     rect(window + 515, windows + 270, 20, 20);
     //building 6
-    if(lights == 1) {
-      fill(255,255,0);
-    } else {
-    fill(0,0,0);
-    }
     rect(window + 565, windows + 335, 20, 20);
     rect(window + 615, windows + 335, 20, 20);
     //building 7
-    if(lights == 1) {
-      fill(255,255,0);
-    } else {
-    fill(0,0,0);
-    }
     rect(window + 670, windows + 130, 20, 20);
     rect(window + 710, windows + 130, 20, 20);
     rect(window + 750, windows + 130, 20, 20);
 
     windows = windows + 50;
+  }  
+  for(int i = 0; i < 13; i++) {
+    if(lights < 39) {
+      fill(255, 255, 100);
+      if (millis()/1000%5<3 && frameCount%12<1)
+      fill(0);
+    } else {
+      fill(0);
+    }
+    rect(windowX[i], windowY[i], windowSize, windowSize);
+  
   }
   
-    //if(mousePressed){
-    //  lights = (int)(Math.random()*2);
-    //}
+    if(mousePressed){
+      lights = (int)(Math.random()*101);
+    }
     //int frequency = 10;
     //if(frameCount % frequency == 0) {
     //  noStroke();
