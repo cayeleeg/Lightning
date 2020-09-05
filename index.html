@@ -5,6 +5,22 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles.css">
 		<script src="processing.js"></script>
+		<style>
+			.blink-bg{
+				color: #fff;
+				padding: 10px;
+				display: inline-block;
+				border-radius: 5px;
+				animation: blinkingBackground 7s infinite;
+			}
+			@keyframes blinkingBackground{
+				0%		{ background-color: #CCCCCC;}
+				25%		{ background-color: #FFFFFF;}
+				50%		{ background-color: #CCCCCC;}
+				75%		{ background-color: #CCCCCC;}
+				100%	        { background-color: #CCCCCC;}
+			}
+		</style>
 	</head>
 	<body>
 		<header>
