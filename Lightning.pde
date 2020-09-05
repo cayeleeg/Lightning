@@ -3,7 +3,6 @@ int startY;
 int endX;
 int endY;
 //float g =2/9.0;
-//lights = [true];
 int lights = (int)(Math.random()*2);
 
 void setup() {
@@ -119,9 +118,10 @@ void draw() {
     windows = windows + 50;
   }
   
-    //if(mousePressed){
-    //  lights = (int)(Math.random()*2);
-    //}
+    if(mousePressed){
+      lights = (int)(Math.random()*2);
+    }
+    
     int frequency = 10;
     if(frameCount % frequency == 0) {
       noStroke();
