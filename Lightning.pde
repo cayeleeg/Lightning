@@ -118,7 +118,7 @@ void draw() {
     windows = windows + 50;
   }
   
-    /*if(mousePressed){
+    if(mousePressed){
       lights = (int)(Math.random()*2);
     }
     
@@ -126,9 +126,9 @@ void draw() {
     if(frameCount % frequency == 0) {
       noStroke();
       fill(0,0,0,191);
-      rect(0,0,780,780);
+      rect(0,0,780,580);
       delay(5);
-    } */
+    } 
   //snowflakes?
   //strokeWeight((float)(Math.random()*0.01));
   //translate(width - 260, height - 260);
