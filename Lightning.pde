@@ -43,7 +43,15 @@ void draw() {
   rect(424, 550, 130, 230);
   rect(554, 610, 104, 170);
   rect(658, 390, 122, 390);
-
+  
+  int frequency = 10;
+    if(frameCount % frequency == 0) {
+      noStroke();
+      fill(0,0,0,191);
+      rect(0,0,780,780);
+      delay(5);
+    } 
+    
   int windows = 290;
   int window = 5; 
 
@@ -122,13 +130,13 @@ void draw() {
       lights = (int)(Math.random()*2);
     }
     
-    int frequency = 10;
+    /* int frequency = 10;
     if(frameCount % frequency == 0) {
       noStroke();
       fill(0,0,0,191);
       rect(0,0,780,780);
       delay(5);
-    } 
+    } */
   //snowflakes?
   //strokeWeight((float)(Math.random()*0.01));
   //translate(width - 260, height - 260);
