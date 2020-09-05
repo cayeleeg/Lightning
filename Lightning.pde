@@ -11,7 +11,7 @@ void setup() {
   startY = 0;
   endX = startX;
   endY = startY;
-  frameRate(65);
+  frameRate(30);
   smooth();
   background(0);
 }
