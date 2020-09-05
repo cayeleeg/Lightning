@@ -122,7 +122,7 @@ void draw() {
       lights = (int)(Math.random()*2);
     }
     
-    int frequency = 30;
+    int frequency = 10;
     if(frameCount % frequency == 0) {
       noStroke();
       fill(0,0,0,191);
