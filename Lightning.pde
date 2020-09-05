@@ -122,11 +122,11 @@ void draw() {
       lights = (int)(Math.random()*2);
     }
     
-    int frequency = 10;
+    int frequency = 30;
     if(frameCount % frequency == 0) {
       noStroke();
       fill(0,0,0,191);
-      rect(0,0,780,580);
+      rect(0,0,780,780);
       delay(5);
     } 
   //snowflakes?
